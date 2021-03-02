@@ -1,0 +1,46 @@
+<div class='container-fluid'>
+  <app-header></app-header>
+  <mat-toolbar style="background-color:lightgray;">
+    Survey Topic: {{data.fullName}} <br>
+    <hr>
+    {{questions[numberOfQuestion-1].nameQ}}<br>
+    <hr>
+    Question: {{numberOfQuestion}}/ {{questions.length}}
+  </mat-toolbar>
+  <div style="padding: 20px;">
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+      [(ngModel)]="questions[numberOfQuestion-1].answer">
+      <mat-radio-button style="margin-top:10px;" class="example-radio-button radio-button margin-left-10"
+        *ngFor="let option of questions[numberOfQuestion-1].options" [value]="option">
+        {{option}} <br>
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div style="padding: 20px;text-align: center;">Your answer is: {{questions[numberOfQuestion-1].answer}}</div>
+  <div class="button-container">
+    <div style="float: left;">
+      <button *ngIf="numberOfQuestion <= 1 || disabledButtons" disabled mat-stroked-button color="primary"
+        (click)="goBack()">
+        Previous
+      </button>
+      <button *ngIf="numberOfQuestion > 1 && !disabledButtons" mat-stroked-button color="primary" (click)="goBack()">
+        Previous
+      </button>
+      <button *ngIf="!disabledButtons && questions[numberOfQuestion-1].answer" style="left: 10px;" mat-stroked-button
+        color="primary" (click)="goNextQ()">
+        {{buttonName}}
+      </button>
+      <button *ngIf="disabledButtons || !questions[numberOfQuestion-1].answer" style="left: 10px;" disabled
+        mat-stroked-button color="primary" (click)="goNextQ()">
+        {{buttonName}}
+      </button>
+    </div>
+    <div style="float: right;">
+      <button mat-stroked-button color="primary" [routerLink]="['/']" routerLinkActive="router-link-active">
+        Change Survey
+      </button>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

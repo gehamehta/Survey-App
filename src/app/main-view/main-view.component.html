@@ -1,0 +1,9 @@
+<div>
+   <app-header></app-header>
+  <mat-nav-list class="list-container title-center">
+    <a [routerLink]="['/subjects', link.fullName]" mat-list-item *ngFor="let link of links; let idx = index">
+      {{link.fullName}}
+    </a>
+  </mat-nav-list>
+  <app-footer></app-footer>
+</div>

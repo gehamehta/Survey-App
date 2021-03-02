@@ -1,0 +1,33 @@
+{ "data": [
+        {
+            "fullName": "Holidays",
+            "shortName": "1",
+            "questions": [
+                {"nameQ": "Where you were on holidays?", "options": [ "Sea", "Mountains", "Other"]},
+                {"nameQ": "How long have you been on holiday?", "options": ["less than a week", "more than a week/less than two weeks", "more than two weeks"]},
+                {"nameQ": "What do you think about this holidays spot?", "options": ["Awesome!", "Not bad", "Poor place"]},
+                {"nameQ": "Would you like to come back to this place?", "options": ["Of course!", "Maybe..", "Nope!"]}
+            ]
+        },
+        {
+            "fullName": "Classroom",
+            "shortName": "2",
+            "questions": [
+                {"nameQ": "Which activities in the classroom do you enjoy the most?", "options": ["Fast Facts", "Memory", "Treasure Hunt", "Other"]},
+                {"nameQ": "Given a chance, what is one change that you would like to see?", "options": [" Teaching method", " Time taken to complete a chapter", "Extracurricular activities", "Other"]},
+                {"nameQ": "How much time do you spend every day on homework?", "options": ["<2 Hours", "2-3 Hours", "3-4 Hours", "4-5 Hours"]}
+                
+            ]
+        },
+        {
+            "fullName": "School",
+            "shortName": "3",
+            "questions": [
+                {"nameQ": "Pierwsze pytanie", "options": ["a", "b", "c"]},
+                {"nameQ": "Drugie pytanie", "options": ["a", "b", "c"]},
+                {"nameQ": "Trzecie pytanie", "options": ["a", "b", "c"]},
+                {"nameQ": "Czwarte pytanie", "options": ["a", "b", "c"]}
+            ]
+        }
+    ]
+}
