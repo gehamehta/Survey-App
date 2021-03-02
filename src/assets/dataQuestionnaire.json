@@ -23,10 +23,10 @@
             "fullName": "School",
             "shortName": "3",
             "questions": [
-                {"nameQ": "Pierwsze pytanie", "options": ["a", "b", "c"]},
-                {"nameQ": "Drugie pytanie", "options": ["a", "b", "c"]},
-                {"nameQ": "Trzecie pytanie", "options": ["a", "b", "c"]},
-                {"nameQ": "Czwarte pytanie", "options": ["a", "b", "c"]}
+                {"nameQ": "First Question", "options": ["a", "b", "c"]},
+                {"nameQ": "Second Question", "options": ["a", "b", "c"]},
+                {"nameQ": "Third Question", "options": ["a", "b", "c"]},
+                {"nameQ": "Forth Question", "options": ["a", "b", "c"]}
             ]
         }
     ]
